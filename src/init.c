@@ -2619,7 +2619,6 @@ static void boot_transitions() {
                 break;
         }
         if (loglevel > 0) {
-            initlog(L_VB, "Entering runlevel: %c", runlevel);
             wrote_utmp_rlevel = 0;
             wrote_wtmp_rlevel = 0;
             write_utmp_wtmp("runlevel", "~~", runlevel + 256 * oldlevel,
